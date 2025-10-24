@@ -1,0 +1,59 @@
+import { Product } from './product';
+
+export const PRODUCTS: Product[] = [
+  {
+    id: 'p001',
+    name: 'Wireless Headphones',
+    description: 'High-quality over-ear wireless headphones with noise cancellation.',
+    price: 149.99,
+    imageUrl: 'https://example.com/images/headphones.jpg',
+    rating: 4.5,
+    reviewCount: 128,
+    inStock: true,
+    category: 'Electronics'
+  },
+  {
+    id: 'p002',
+    name: 'Running Shoes',
+    description: 'Lightweight running shoes with excellent grip and comfort.',
+    price: 89.99,
+    imageUrl: 'https://example.com/images/shoes.jpg',
+    rating: 4.2,
+    reviewCount: 256,
+    inStock: true,
+    category: 'Footwear'
+  },
+  {
+    id: 'p003',
+    name: 'Smart Watch',
+    description: 'Feature-packed smartwatch with heart rate and sleep tracking.',
+    price: 199.99,
+    imageUrl: 'https://example.com/images/smartwatch.jpg',
+    rating: 4.7,
+    reviewCount: 342,
+    inStock: false,
+    category: 'Wearables'
+  },
+  {
+    id: 'p004',
+    name: 'Coffee Maker',
+    description: 'Automatic drip coffee maker with programmable timer.',
+    price: 59.99,
+    imageUrl: 'https://example.com/images/coffeemaker.jpg',
+    rating: 4.1,
+    reviewCount: 89,
+    inStock: true,
+    category: 'Home Appliances'
+  },
+  {
+    id: 'p005',
+    name: 'Gaming Mouse',
+    description: 'Ergonomic gaming mouse with customizable buttons and RGB lighting.',
+    price: 49.99,
+    imageUrl: 'https://example.com/images/gaming-mouse.jpg',
+    rating: 4.6,
+    reviewCount: 412,
+    inStock: true,
+    category: 'Accessories'
+  }
+];
