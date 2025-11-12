@@ -1,0 +1,8 @@
+The application does not perform any form of runtime or dynamic code loading.
+
+References to dlopen and NSBundle originate from system frameworks and the Cordova runtime engine, which internally invoke these APIs only to load pre-bundled, code-signed frameworks that are already included within the app bundle. No executable binaries or libraries are fetched from external or writable directories (such as /Documents/, /tmp/, or network sources).
+
+The project’s LD_RUNPATH_SEARCH_PATHS setting —
+@executable_path/Frameworks, @loader_path/Frameworks — is a standard iOS configuration that restricts dynamic library resolution strictly to the app’s own signed Frameworks directory.
+
+Consequently, the app’s use of dlopen and NSBundle is limited to legitimate internal linking and resource loading. No untrusted or unsigned code is ever introduced or executed after installation, ensuring full compliance with App Store Review Guideline 2.5.2 regarding dynamic code execution and code-signing integrity.
