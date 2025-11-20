@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.sbi.lotusintouch" version="3.0.19" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:mfp="http://www.ibm.com/mobilefirst/cordova-plugin-mfp">
+    <name>YONO SBI</name>
+    <description>
+		SBI Lotus InTouch Mobile Application
+	</description>
+    <author email="" href="https://intouch.onlinesbi.com">
+		SBI
+	</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <preference name="BackupWebStorage" value="local" />
+    <universal-links>
+        <host event="redirectionUrlEvent" name="uat.intouch.onlinesbi.com" scheme="https" />
+        <ios-team-id value="5U64MV6Y93" />
+        <path url="*" />
+    </universal-links>
+    <platform name="android">
+        <preference name="LottieRemoteEnabled" value="false" />
+        <preference name="LottieLoopAnimation" value="true" />
+        <preference name="GradlePluginKotlinEnabled" value="true" />
+        <preference name="GradlePluginKotlinVersion" value="1.7.21" />
+        <preference name="AndroidXEnabled" value="true" />
+        <preference name="LottieAnimationLocationLight" value="www/img/splashScreenData/latestLottie.json" />
+        <preference name="LottieAnimationLocationDark" value="www/img/splashScreenData/latestLottie.json" />
+        <preference name="LottieEnableHardwareAcceleration" value="true" />
+        <preference name="LottieScaleType" value="CENTER_CROP" />
+        <preference name="LottieCacheDisabled" value="true" />
+        <preference name="LottieFullScreen" value="true" />
+        <preference name="FIREBASE_UPDATE" value="false" />
+        <preference name="APPICE_APPLICATIONCLASS_INCLUDE" value="false" />
+        <preference name="MFP_PUSH" value="true" />
+        <preference name="SSL_PINNING" value="false" />
+        <preference density="xxxhdpi" name="AndroidWindowSplashScreenAnimatedIcon" value="res/drawable-xxxhdpi/yfei_4096.png" />
+        <preference name="AndroidWindowSplashScreenBackground" value="#ffffff" />
+        <preference name="AutoHideSplashScreen" value="false" />
+        <allow-intent href="market:*" />
+        <allow-navigation href="http://*/*" />
+        <allow-navigation href="https://*/*" />
+        <allow-navigation href="data:*" />
+        <name>YONO SBI</name>
+        <preference name="AndroidLaunchMode" value="singleInstance" />
+        <preference name="android-minSdkVersion" value="31" />
+        <preference name="android-targetSdkVersion" value="34" />
+        <preference name="Scheme" value="app" />
+        <preference name="hostname" value="localhost" />
+        <preference name="AndroidInsecureFileModeEnabled" value="true" />
+        <icon density="ldpi" src="res/icon/android/icon-36-ldpi.png" />
+        <icon density="mdpi" src="res/icon/android/icon-48-mdpi.png" />
+        <icon density="hdpi" src="res/icon/android/icon-72-hdpi.png" />
+        <icon density="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
+        <icon density="xxhdpi" src="res/icon/android/icon-144-xxhdpi.png" />
+        <icon density="xxxhdpi" src="res/icon/android/icon-192-xxxhdpi.png" />
+        <update src="res/images/android/back.png" target="res/drawable-hdpi/back.png" />
+        <update src="res/images/android/share.png" target="res/drawable-hdpi/share.png" />
+        <resource-file src="res/xml/provider_paths.xml" target="res/xml/provider_paths.xml" />
+        <resource-file src="res/xml/sharing_paths.xml" target="res/xml/sharing_paths.xml" />
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+            <application android:allowBackup="false" android:hardwareAccelerated="true" android:usesCleartextTraffic="false" tools:replace="android:allowBackup" />
+        </edit-config>
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <preference name="FIREBASE_UPDATE" value="false" />
+        <preference name="APPICE_APPLICATIONCLASS_INCLUDE" value="false" />
+        <preference name="MFP_PUSH" value="true" />
+        <preference name="SSL_PINNING" value="false" />
+        <preference name="KeyboardDisplayRequiresUserAction" value="false" />
+        <preference name="target-device" value="handset" />
+        <preference name="SwiftVersion" value="5.0" />
+        <icon height="57" src="res/icon/ios/icon.png" width="57" />
+        <icon height="114" src="res/icon/ios/icon@2x.png" width="114" />
+        <icon height="40" src="res/icon/ios/icon-40.png" width="40" />
+        <icon height="80" src="res/icon/ios/icon-40@2x.png" width="80" />
+        <icon height="50" src="res/icon/ios/icon-50.png" width="50" />
+        <icon height="100" src="res/icon/ios/icon-50@2x.png" width="100" />
+        <icon height="120" src="res/icon/ios/icon-60@2x.png" width="120" />
+        <icon height="180" src="res/icon/ios/icon-60@3x.png" width="180" />
+        <icon height="72" src="res/icon/ios/icon-72.png" width="72" />
+        <icon height="144" src="res/icon/ios/icon-72@2x.png" width="144" />
+        <icon height="76" src="res/icon/ios/icon-76.png" width="76" />
+        <icon height="152" src="res/icon/ios/icon-76@2x.png" width="152" />
+        <icon height="167" src="res/icon/ios/icon-83.5@2x.png" width="167" />
+        <icon height="29" src="res/icon/ios/icon-small.png" width="29" />
+        <icon height="58" src="res/icon/ios/icon-small@2x.png" width="58" />
+        <icon height="87" src="res/icon/ios/icon-small@3x.png" width="87" />
+        <splash height="2732" src="res/screen/ios/Default@2x~universal~anyany.png" width="2732" />
+        <update src="res/images/ios/back.png" target="YONO SBI/Resources/back.png" />
+        <update src="res/images/ios/share.png" target="YONO SBI/Resources/share.png" />
+    </platform>
+    <config-file parent="com.apple.developer.associated-domains" target="*-Debug.plist">
+        <array>
+            <string>applinks:yonouat.propequity.in</string>
+        </array>
+    </config-file>
+    <config-file parent="com.apple.developer.associated-domains" target="*-Release.plist">
+        <array>
+            <string>applinks:yonouat.propequity.in</string>
+        </array>
+    </config-file>
+    <config-file parent="LSApplicationQueriesSchemes" platform="ios" target="*-Info.plist">
+        <array>
+            <string>uber</string>
+        </array>
+    </config-file>
+    <config-file parent="/*" target="config.xml">
+        <preference name="GradlePluginGoogleServicesEnabled" value="true" />
+        <preference name="GradlePluginGoogleServicesVersion" value="4.3.15" />
+    </config-file>
+    <mfp:android>
+        <mfp:sdkChecksum>2324313685</mfp:sdkChecksum>
+        <mfp:appChecksum>0</mfp:appChecksum>
+        <mfp:security>
+            <mfp:testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3" />
+        </mfp:security>
+    </mfp:android>
+    <mfp:ios>
+        <mfp:sdkChecksum>4209591306</mfp:sdkChecksum>
+        <mfp:appChecksum>0</mfp:appChecksum>
+        <mfp:security>
+            <mfp:testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3" />
+        </mfp:security>
+    </mfp:ios>
+    <mfp:windows>
+        <mfp:windows8>
+            <mfp:sdkChecksum>0</mfp:sdkChecksum>
+            <mfp:security>
+                <mfp:testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3" />
+            </mfp:security>
+        </mfp:windows8>
+        <mfp:windowsphone8>
+            <mfp:sdkChecksum>0</mfp:sdkChecksum>
+            <mfp:security>
+                <mfp:testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3" />
+            </mfp:security>
+        </mfp:windowsphone8>
+        <mfp:windows10>
+            <mfp:sdkChecksum>0</mfp:sdkChecksum>
+            <mfp:security>
+                <mfp:testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3" />
+            </mfp:security>
+        </mfp:windows10>
+        <mfp:appChecksum>0</mfp:appChecksum>
+    </mfp:windows>
+    <mfp:platformVersion>8.0.0.00-20230609-123807</mfp:platformVersion>
+    <mfp:clientCustomInit enabled="false" />
+    <mfp:server runtime="mfp" url="https://yono-app-dev.sbiuat.bank.in" />
+    <mfp:directUpdateAuthenticityPublicKey />
+    <mfp:languagePreferences>en</mfp:languagePreferences>
+    <plugin name="phonegap-plugin-barcodescanner" spec="^8.0.1">
+        <variable name="ANDROID_SUPPORT_V4_VERSION" value="27.+" />
+    </plugin>
+    <plugin name="cordova-plugin-upisdk" spec="./plugins/cordova-plugin-upisdk" />
+    <plugin name="cordova-plugin-security" spec="./plugins/cordova-plugin-security" />
+    <plugin name="cordova-plugin-utils" spec="./plugins/cordova-plugin-utils" />
+    <plugin name="com.lotus.keyguard" spec="./plugins/com.lotus.keyguard" />
+    <plugin name="yono-voice-to-text" spec="./plugins/yono-voice-to-text" />
+    <mfp:serverUri url="" />
+    <mfp:APIproxyURL>/adapters/MobileAPIProxy</mfp:APIproxyURL>
+    <plugin name="cordova-plugin-safariviewcontroller" spec="~1.6.0" />
+    <mfp:SDKProtocolVersion>2</mfp:SDKProtocolVersion>
+</widget>
