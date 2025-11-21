@@ -1,0 +1,12 @@
+<platform name="ios">
+    ...
+    <update src="res/images/ios/share.png" target="YONO SBI/Resources/share.png" />
+
+    <!-- Enforce ATS - Disable Arbitrary Loads -->
+    <edit-config target="NSAppTransportSecurity" file="*-Info.plist" mode="merge">
+        <dict>
+            <key>NSAllowsArbitraryLoads</key>
+            <false/>
+        </dict>
+    </edit-config>
+</platform>
